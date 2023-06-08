@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.sec {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0062be;
+  transition: 0.5s;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  position: relative;
+  max-width: 80px;
+}
+header ul li {
+  padding: 10px 0;
+  position: relative;
+}
+header ul li a::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  transform: scale(0);
+  /* transform-origin: right; */
+  transition: transform 0.1s linear;
+}
+header ul li a:focus:after {
+  /* transform-origin: left; */
+  transform: scale(1);
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul li {
+  margin: 0 20px;
+  font-weight: 500;
+}
+ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 100px;
+}
+.textBox {
+  position: relative;
+  max-width: 600px;
+}
+.textBox h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 1.5em;
+  font-size: 3em;
+}
+.textBox h2 span {
+  font-size: 2em;
+}
+.textBox p {
+  color: #fff;
+}
+.textBox a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background-color: #fff;
+  color: #111;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.25s;
+}
+.textBox a:hover {
+  opacity: 0.8;
+}
+.imgBox {
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+  padding-right: 150px;
+}
+.imgBox img {
+  max-width: 260px;
+  width: 55%;
+}
+.thumb {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  display: flex;
+}
+.thumb div {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.thumb div:hover {
+  transform: translateY(-15px);
+}
+.thumb div img {
+  max-width: 40px;
+}
+.social {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.social-wr {
+  margin: 10px 0;
+  padding: 0 6px;
+  border-radius: 50%;
+  font-size: 26px;
+  transition: 0.25s;
+}
+.social-wr:hover {
+  transform: scale(1.4);
+}
+.social-wr a {
+  color: white;
+}
+.toggleMenu {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  section {
+    padding: 40px;
+    padding-bottom: 140px;
+  }
+  header {
+    padding: 20px 40px;
+  }
+  header .logo {
+    position: relative;
+    max-width: 60px;
+  }
+  header ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: 0.2s;
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+  }
+  header ul.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  header ul li {
+    position: relative;
+    padding: 10px 0;
+  }
+  header ul li a {
+    font-size: 2em;
+    color: #111;
+  }
+  header ul li a:hover {
+    color: #ed0223;
+  }
+  .toggleMenu {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    font-size: 2em;
+    color: white;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .toggleMenu.active {
+    filter: invert(1);
+  }
+  .content {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+  .textBox {
+    position: relative;
+    max-width: 100%;
+    padding-right: 20%;
+  }
+  .textBox h2 {
+    font-size: 2em;
+  }
+  .textBox a {
+    font-size: 14px;
+    padding: 6px 15px;
+  }
+  .imgBox {
+    width: 100%;
+    padding-right: 0;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgBox img {
+    width: 70%;
+  }
+  .thumb div img {
+    max-width: 30px;
+  }
+  .social {
+    right: 0;
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="./assets/img/logo.png" alt="" />
+      </a>
+
+      <div class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About </a>
+        <a href="#menu">Menu </a>
+        <a href="#products">Products</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+        <a href="#blogs">Blogs</a>
+      </div>
+
+      <div class="icons">
+        <div class="fa-solid fa-magnifying-glass" id="search-btn"></div>
+        <div class="fa-solid fa-cart-shopping" id="cart-btn"></div>
+        <div class="fa-solid fa-bars" id="menu-btn"></div>
+      </div>
+
+      <div class="search-form">
+        <input
+          type="search"
+          name=""
+          id="search-box"
+          placeholder="Search here..."
+        />
+        <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+      </div>
+
+      <div class="cart-items-container">
+        <div class="cart-items-list">
+          <div class="cart-item">
+            <span class="fa-solid fa-xmark remove"></span>
+            <img src="./assets/img/item1.jpg" alt="" />
+            <div class="content">
+              <h3>Cart item 1</h3>
+              <div class="price">$16.99</div>
+            </div>
+          </div>
+          <div class="cart-item">
+            <span class="fa-solid fa-xmark remove"></span>
+            <img src="./assets/img/item2.jpg" alt="" />
+            <div class="content">
+              <h3>Cart item 2</h3>
+              <div class="price">$14.99</div>
+            </div>
+          </div>
+        </div>
+        <div class="checkTotal">
+          <a href="#" class="btn">Checkout now</a>
+          <p class="total">Total :<span> 0 </span></p>
+        </div>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3>FRESH COFFEE IN THE MORNING</h3>
+        <p>
+          LOREM IPSUM, DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. PLACEAT
+          LABORE, SINT CUPIDITATE DISTINCTIO TEMPORA REICIENDIS.
+        </p>
+        <a href="#" class="btn">Get Yours Now</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="heading">
+        <h1><span>About</span> Us</h1>
+      </div>
+      <div class="row">
+        <div class="image">
+          <img src="./assets/img/about-img.jpeg" alt="" />
+        </div>
+        <div class="content">
+          <h3>What Makes Our Coffe Special?</h3>
+          <p>
+            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+            Voluptatibus Qui Ea Ullam, Enim Tempora Ipsum Fuga Alias Quae
+            Ratione A Officiis Id Temporibus Autem? Quod Nemo Facilis
+            Cupiditate. Ex, Vel?
+          </p>
+          <p>
+            Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Odit Amet
+            Enim Quod Veritatis, Nihil Voluptas Culpa! Neque Consectetur
+            Obcaecati Sapiente?
+          </p>
+          <a href="#" class="btn">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="heading">
+        <h1><span>Our</span> Menu</h1>
+      </div>
+      <div class="menu-list">
+        <button class="active" type="all">All</button>
+        <button type="coffee">Coffee</button>
+        <button type="teas">Teas</button>
+        <button type="bakery">Bakery</button>
+        <button type="sandwiches">Sandwiches</button>
+      </div>
+      <div class="box-container">
+        <div class="box" type-box="coffee">
+          <img src="./assets/img/menu-1.png" alt="" />
+          <h3>Expresso hot</h3>
+          <div class="price">$15.55</div>
+          <button class="btn">Add To Cart</button>
+        </div>
+        <div class="box" type-box="coffee">
+          <img src="./assets/img/menu-2.png" alt="" />
+          <h3>Capuchino</h3>
+          <div class="price">$15.55</div>
+          <button class="btn">Add To Cart</button>
+        </div>
+        <div class="box" type-box="coffee">
+          <img src="./assets/img/menu-3.png" alt="" />
+          <h3>Flat white</h3>
+          <div class="price">$15.55</div>
+          <button class="btn">Add To Cart</button>
+        </div>
+        <div class="box" type-box="coffee">
+          <img src="./assets/img/menu-4.png" alt="" />
+          <h3>Mocha</h3>
+          <div class="price">$15.55</div>
+          <button class="btn">Add To Cart</button>
+        </div>
+        <div class="box" type-box="teas">
+          <img src="./assets/img/tea1.jpg" alt="" />
+          <h3>Oolong</h3>
+          <div class="price">$15.55</div>
+          <button class="btn">Add To Cart</button>
+        </div>
+        <div class="box" type-box="teas">
+          <img src="./assets/img/tea2.jpg" alt="" />
+          <h3>Black Tea</h3>
+          <div class="price">$15.55</div>
+          <button class="btn">Add To Cart</button>
+        </div>
+        <div class="box" type-box="teas">
+          <img src="./assets/img/tea3.jpg" alt="" />
+          <h3>White Tea</h3>
+          <div class="price">$15.55</div>
+          <button class="btn">Add To Cart</button>
+        </div>
+        <div class="box" type-box="teas">
+          <img src="./assets/img/tea4.jpg" alt="" />
+          <h3>Puer</h3>
+          <div class="price">$15.55</div>
+          <button class="btn">Add To Cart</button>
+        </div>
+        <div class="box" type-box="bakery">
+          <img src="./assets/img/bakery1.jpg" alt="" />
+          <h3>Chocolate Cupcake</h3>
+          <div class="price">$15.55</div>
+          <button class="btn">Add To Cart</button>
+        </div>
+        <div class="box" type-box="bakery">
+          <img src="./assets/img/bakery2.jpg" alt="" />
+          <h3>Oatmilk Cookie</h3>
+          <div class="price">$15.55</div>
+          <button class="btn">Add To Cart</button>
+        </div>
+        <div class="box" type-box="bakery">
+          <img src="./assets/img/bakery3.jpg" alt="" />
+          <h3>Cinnamon Roll</h3>
+          <div class="price">$15.55</div>
+          <button class="btn">Add To Cart</button>
+        </div>
+        <div class="box" type-box="bakery">
+          <img src="./assets/img/bakery4.jpg" alt="" />
+          <h3>Pies</h3>
+          <div class="price">$15.55</div>
+          <button class="btn">Add To Cart</button>
+        </div>
+        <div class="box" type-box="sandwiches">
+          <img src="./assets/img/sandwich1.jpg" alt="" />
+          <h3>Hummous</h3>
+          <div class="price">$15.55</div>
+          <button class="btn">Add To Cart</button>
+        </div>
+        <div class="box" type-box="sandwiches">
+          <img src="./assets/img/sandwich2.jpg" alt="" />
+          <h3>Bries cheese</h3>
+          <div class="price">$15.55</div>
+          <button class="btn">Add To Cart</button>
+        </div>
+        <div class="box" type-box="sandwiches">
+          <img src="./assets/img/sandwich3.jpg" alt="" />
+          <h3>Egg Mayo</h3>
+          <div class="price">$15.55</div>
+          <button class="btn">Add To Cart</button>
+        </div>
+        <div class="box" type-box="sandwiches">
+          <img src="./assets/img/sandwich4.jpg" alt="" />
+          <h3>Tasty and healthy</h3>
+          <div class="price">$15.55</div>
+          <button class="btn">Add To Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <h1 class="heading">Our<span> Products</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fa-solid fa-cart-shopping"></a>
+            <a href="#" class="fa-solid fa-heart"></a>
+            <a href="#" class="fa-solid fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="./assets/img/product-1.png" alt="" />
+          </div>
+          <div class="content">
+            <h3>Fresh Coffee</h3>
+          </div>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <div class="price">$14.99</div>
+        </div>
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fa-solid fa-cart-shopping"></a>
+            <a href="#" class="fa-solid fa-heart"></a>
+            <a href="#" class="fa-solid fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="./assets/img/product-1.png" alt="" />
+          </div>
+          <div class="content">
+            <h3>Fresh Coffee</h3>
+          </div>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <div class="price">$14.99</div>
+        </div>
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fa-solid fa-cart-shopping"></a>
+            <a href="#" class="fa-solid fa-heart"></a>
+            <a href="#" class="fa-solid fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="./assets/img/product-1.png" alt="" />
+          </div>
+          <div class="content">
+            <h3>Fresh Coffee</h3>
+          </div>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <div class="price">$14.99</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="review" id="review">
+      <h1 class="heading">Customer's <span>Review</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="./assets/img/quote-img.png" alt="" class="quotes" />
+          <p>
+            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Animi Nulla
+            Sit Libero Nemo Fuga Sequi Nobis? Necessitatibus Aut Laborum, Nisi
+            Quas Eaque Laudantium Consequuntur Iste Ex Aliquam Minus Vel? Nemo.
+          </p>
+          <img src="./assets/img/pic-1.png" alt="" class="user" />
+          <h3>Jone Doe</h3>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/img/quote-img.png" alt="" class="quotes" />
+          <p>
+            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Animi Nulla
+            Sit Libero Nemo Fuga Sequi Nobis? Necessitatibus Aut Laborum, Nisi
+            Quas Eaque Laudantium Consequuntur Iste Ex Aliquam Minus Vel? Nemo.
+          </p>
+          <img src="./assets/img/pic-2.png" alt="" class="user" />
+          <h3>Alex Elina</h3>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/img/quote-img.png" alt="" class="quotes" />
+          <p>
+            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Animi Nulla
+            Sit Libero Nemo Fuga Sequi Nobis? Necessitatibus Aut Laborum, Nisi
+            Quas Eaque Laudantium Consequuntur Iste Ex Aliquam Minus Vel? Nemo.
+          </p>
+          <img src="./assets/img/pic-3.png" alt="" class="user" />
+          <h3>David</h3>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h1 class="heading">Contact <span>Us</span></h1>
+      <div class="row">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.337374950727!2d106.75358671457221!3d10.861923760580453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752791d36e104b%3A0x2a80bb76fe63032e!2zQW4gQsOsbmgsIExpbmggVMOieSwgVGjhu6cgxJDhu6ljLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1679537610987!5m2!1svi!2s"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <form action="">
+          <h3>Get in Touch</h3>
+          <div class="inputBox">
+            <span class="fa-solid fa-user"></span>
+            <input type="text" name="" id="" placeholder="Name" />
+          </div>
+          <div class="inputBox">
+            <span class="fa-solid fa-envelope"></span>
+            <input type="email" name="" id="" placeholder="Email" />
+          </div>
+          <div class="inputBox">
+            <span class="fa-solid fa-phone"></span>
+            <input type="number" name="" id="" placeholder="Number" />
+          </div>
+          <input type="submit" value="contact now" class="btn" />
+        </form>
+      </div>
+    </section>
+
+    <section class="blogs" id="blogs">
+      <h1 class="heading">Our <span>Blogs</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="./assets/img/blog-1.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Tasty And Refreshing Coffee</a>
+            <span>By Admin / 23rd March, 2023</span>
+            <p>
+              Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Non,
+              Dicta.
+            </p>
+            <a href="#" class="btn">Read more</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="./assets/img/blog-2.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Tasty And Refreshing Coffee</a>
+            <span>By Admin / 23rd March, 2023</span>
+            <p>
+              Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Non,
+              Dicta.
+            </p>
+            <a href="#" class="btn">Read more</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="./assets/img/blog-3.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Tasty And Refreshing Coffee</a>
+            <span>By Admin / 23rd March, 2023</span>
+            <p>
+              Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Non,
+              Dicta.
+            </p>
+            <a href="#" class="btn">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer" id="footer">
+      <div class="share">
+        <a href="#" class="fa-brands fa-facebook-f"></a>
+        <a href="#" class="fa-brands fa-square-instagram"></a>
+        <a href="#" class="fa-brands fa-twitter"></a>
+        <a href="#" class="fa-brands fa-linkedin"></a>
+        <a href="#" class="fa-brands fa-pinterest"></a>
+      </div>
+      <div class="links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Menu</a>
+        <a href="#">Products</a>
+        <a href="#">Review</a>
+        <a href="#">Contact</a>
+        <a href="#">Blogs</a>
+      </div>
+      <div class="credit">
+        Created By
+        <span class="info">
+          <a
+            href="https://www.facebook.com/hoang.tuan.308"
+            target="https://www.facebook.com/hoang.tuan.308"
+          >
+            Mohamed Hegazy
+          </a>
+        </span>
+        | All Rights Researved
+        <br />
+        <br />
+        <p class="orignal">Orignal Template | Mr.Web Designer</p>
+      </div>
+    </section>
+  </body>
+  <script src="./app.js"></script>
+</html>

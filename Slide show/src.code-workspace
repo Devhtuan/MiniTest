@@ -1,0 +1,40 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "../.."
+	},
+	{
+		"path": "../../../Javascript"
+	},
+	{
+		"path": "../../../Grid"
+	},
+	{
+		"path": "../../Login-form"
+	},
+	{
+		"path": "../../Profile-card"
+	},
+	{
+		"path": "../../Toggel"
+	},
+	{
+		"path": "../../../Toggle test"
+	},
+	{
+		"path": "../../../Lightbox"
+	},
+	{
+		"path": "../../../Money"
+	},
+	{
+		"path": "../../../web"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Project"
+  }
+}
